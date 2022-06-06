@@ -1,0 +1,24 @@
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "username": "John Doe",
+    "email": "test@test.com",
+    "password": "admin123"
+}
+
+###
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "username": "John Doe",
+    "email": "test@test.com",
+    "password": "admin123"
+}
+
+
+###
+GET http://localhost:3000/auth/profile
+Content-Type: application/json
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlkYWRiODg4OThjOThlNmQzNzRlZDkiLCJpYXQiOjE2NTQ1MDA3OTgsImV4cCI6MTY1NDU4NzE5OH0.sCLyfeonAQMMIigTXnGFRyMXE18EmsSL9dki49cUob0
